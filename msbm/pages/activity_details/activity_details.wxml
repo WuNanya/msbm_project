@@ -1,0 +1,44 @@
+<view class='container'>
+  <view class='header'>
+    <view class='header_top'>
+      <view class='name'>{{activity_name}}</view>
+
+    </view>
+    <view class='header_bottom'>
+      <view>报名人数：{{activity_numed}}
+        <view class='special' wx:if="{{activity_num !== ''}}">/</view>
+        {{activity_num}}</view>
+    </view>
+  </view>
+
+
+<view class='body'>
+  <view class='body_title'>活动信息</view>
+
+  <view class='body_content'>
+    <view class='content'>发起单位
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>：{{activity_unit}}</view>
+    <view class='content'>发起人电话
+      <text decode="{{true}}">&nbsp;</text>：{{activity_tel}}</view>
+    <view class='content'>报名时间
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>：{{activity_start_time}}
+      <view class='special' wx:if="{{activity_start_time !== ''}}">-</view>
+      {{activity_end_time}}</view>
+    <view class='content'>活动地点
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>：{{activity_address}}</view>
+  </view>
+</view>
+
+<view class='bottom'>
+  <view class='introduction_title'>活动简介</view>
+  <view class='introduction_content'>{{activity_introduce}}</view>
+</view>
+
+<view class='btn'>
+  <view class='cancel' bindtap = 'sign_up'>马上报名</view>
+  <view class='sign' bindtap='cancel_act'>
+    取消报名
+  </view>
+</view>
+
+</view>

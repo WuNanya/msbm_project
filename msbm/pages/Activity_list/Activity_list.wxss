@@ -1,0 +1,68 @@
+.container {
+  background-color: #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+
+margin-left: 50rpx;
+}
+
+.header{
+
+  margin-right: 20rpx;
+  font-size: 30rpx;
+  padding: 15rpx 70rpx 15rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list {
+  font-size: 30rpx;
+  background-color: white;
+  border-width: 1rpx 0 0 0;
+  border-style: solid;
+  border-color: gainsboro;
+  padding: 20rpx 50rpx 20rpx 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.add_btn1{
+    width: 100%;
+    position: fixed;
+    bottom: 90rpx;
+    border-radius: 0;
+}
+.btn1{
+    margin-top: 30rpx;
+    width: 100%;
+    background:#1296db;
+    color: white;
+    border-radius: 0;
+}
+
+.add_btn2{
+    width: 100%;
+    position: fixed;
+    bottom: 0rpx;
+    border-radius: 0;
+}
+.btn2{
+    margin-top: 30rpx;
+    width: 100%;
+    background: darkgrey;
+    color: white;
+    border-radius: 0;
+}

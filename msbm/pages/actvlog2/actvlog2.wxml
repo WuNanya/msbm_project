@@ -1,0 +1,17 @@
+<view class='container'>
+  <view wx:for="{{act_mess}}" wx:key="*this">
+    <view class='header'>
+      <view class='header_top'>
+        <view class='name'>{{item.activity_name}}</view>
+        <view class='btn' bindtap='toDetail' data-value="{{item.activity_id}}">查看详情 <image class='black_head' src='../../picture/black_head.png'></image>
+        </view>
+     
+      </view>
+      <view class='header_bottom'>
+        <view>报名时间:{{item.activity_start_time}}——{{item.activity_end_time}}</view>
+        <view class='num'>报名人数：{{item. activity_count}} /{{item.activity_max}}</view>
+        <image bindtap='getqrCode' class='qrcode' src='../../picture/qrcode.png' data-value="{{item.activity_id}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

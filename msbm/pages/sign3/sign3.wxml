@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="classname">
+    <form >
+      <view class="message">活动名称：
+        <input placeholder-class='placeholder' placeholder='请输入活动名称（必填）' class="btn_in" name='act_name' value="{{}}" bindinput = "event_name_change"/>
+      </view>
+      <view class="message">活动简介（140字）：
+        <input placeholder-class='placeholder' placeholder='请输入活动简介' class="btn_in" name='act_name' value="{{}}" bindinput = "event_introdution_change"/>
+      </view>
+      <view class="message">报名上限(1000)：
+        <input type="number" placeholder-class='placeholder' placeholder='请输入报名人数（必填）' class="btn_in" name='people_num' value="{{}}" bindinput = "max_peo_change"/>
+      </view>
+      <view class="message">活动地址（140字）：
+        <input placeholder-class='placeholder' placeholder='请输入活动地址' class="btn_in" name='act_name' value="{{}}" bindinput = "event_address_change"/>
+      </view>
+      <view class="message">活动发起单位：
+        <input placeholder-class='placeholder' placeholder='请输入活动发起单位' class="btn_in" name='act_name' value="{{}}" bindinput = "event_unit_change"/>
+      </view>
+      <view class="message">
+        <picker mode="date" value="{{dateValuestart}}" start="2018-01-01" end="2022-12-31" bindchange="Change_start">
+          <view class="selectDate">
+            开始报名时间：{{dateValuestart}}
+
+          </view>
+        </picker>
+      </view>
+      <view class="message">
+
+        <picker mode="date" value="{{dateValueend}}" start="2018-01-01" end="2022-12-31" bindchange="Change_end">
+            <view class="selectDate">
+              开始结束时间：{{dateValueend}}
+            </view>
+        </picker>
+      </view>
+      <text style='display:block; text-align:left; font-size:30rpx;margin-left:70rpx;margin-top:20rpx;'>填加报名表选项</text>
+      <view class='box' wx:for='{{array}}' wx:key=''>
+        <input type='text' class='b-ipt' placeholder='' data-idx='{{index}}' value='{{inputVal[index]}}' bindinput='getInputVal' 
+        />
+        <view class='del' bindtap='delInput' data-idx='{{index}}'>
+          <image class="pic-sty" mode='aspectFit' src='minus-circle.png'></image>
+        </view>
+      </view>
+      <view class='add' bindtap='addInput'>
+        <image src='plus-circle.png' class="pic-sty" mode='aspectFit'></image>
+      </view>
+
+      <button type="" form-type="submit" hover-class='button-hover' class='btn_style' bindtap = "send">发布</button>
+    </form>
+  </view>
+</view>

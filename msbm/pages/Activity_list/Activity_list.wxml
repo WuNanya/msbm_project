@@ -1,0 +1,32 @@
+<view class='container'>
+
+<view class='message'>
+  <view class='header'>
+      <view class='list_id'>序号</view>
+    <view class='list_name'>姓名</view>
+    <view class='list_tel'>联系电话</view>
+  </view>
+
+  <view wx:for="{{act_mess}}">
+  <view class='list' >
+    <view class='id'>{{index+1}}</view>
+    <view class='name'>{{item.user_name}}</view>
+    <view class='tel'>{{item.telephone}}</view>
+</view>
+  </view>
+</view>
+
+
+<view class='add_btn1'>
+    <button class='btn1' bindtap='download'>
+        下载报名表
+    </button>
+</view>
+
+<view class='add_btn2'>
+    <button class='btn2' bindtap='cancel'>
+        取消活动
+    </button>
+</view>
+</view>
+

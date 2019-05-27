@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+<view bindtap = 'jump_scan' class='top'>
+<image src='../../picture/home_top.png'></image>
+<view  class='top_text'>扫码报名</view>
+</view>
+
+<view  bindtap='sign' class='bottom'>
+<image src='../../picture/home_bottom.png'></image>
+<view class='bottom_text'>发起报名</view>
+</view>
+
+</view>

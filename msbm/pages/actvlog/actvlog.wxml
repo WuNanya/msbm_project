@@ -1,0 +1,16 @@
+<view class='container'> 
+<view wx:for="{{act_mess}}" wx:key="*this">
+  <view class='header'>
+  <view class='header_top'>
+  <view class='name'>{{item.activity_name}}</view>
+  <view class='btn' bindtap='toDetail' data-value = "{{item.activity_id}}">查看详情
+<image class='black_head' src='../../picture/black_head.png'></image>
+</view>
+ </view> 
+ <view class='header_bottom'>
+ <view class='time'>起止时间:{{item.activity_start_time}}-{{item.activity_end_time}}</view>
+ <view class="people">发起人信息：{{item.activity_unit}}</view>
+ </view>
+  </view>
+</view>
+</view>

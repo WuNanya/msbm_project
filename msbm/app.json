@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/guide_page/guide_page",
+    "pages/index2/index2",
+    "pages/QRCODE/QRCODE",
+    "pages/submit/submit",
+    "pages/Activity_list/Activity_list",
+    "pages/activity_details/activity_details",
+    "pages/actvlog2/actvlog2",
+    "pages/actvlog/actvlog",
+    "pages/EditMes/EditMes",
+    "pages/sign3/sign3",
+    "pages/mine/mine",
+    "pages/user_option/user_option"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#010101",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "码上报名",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "cloud": true,
+  "tabBar": {
+    "color": "#373737",
+    "selectedColor": "#90caf9",
+    "color": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index2/index2",
+        "iconPath": "picture/home.png",
+        "selectedIconPath": "picture/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "picture/personal.png",
+        "selectedIconPath": "picture/personal.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,9 @@
+
+  <view class="page-section">
+    <view class="page-section-title">用户意见反馈</view>
+    <view class=" text textarea-wrp">
+      <textarea class='text'  maxlength='280' auto-focus="true" style="height: 7em" placeholder='您宝贵的意见是我们不断进步的动力' bindinput='change_value'/>
+      </view>
+    </view>
+
+<button class='btn' bindtap='send'>提交</button>

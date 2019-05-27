@@ -1,0 +1,24 @@
+<!--pages/mine/mine.wxml-->
+<view class = "container">
+  <view class = "userInfo">
+    <open-data class = "userAvatarUrl" type="userAvatarUrl"></open-data>
+    <open-data class = "userName" type="userNickName"></open-data>
+    <view class = "edit" bindtap = "editUserInfo" >编辑信息
+      <image class='head' src='../../picture/black_head.png'></image>
+   </view>
+ 
+    
+
+  </view>
+  <view class = "other">
+  <view class='top'>
+    <view class = "sign myTable" bindtap = "myTable">我创建的活动</view>
+
+    <view class = "sign record" bindtap = "record">我参加的活动</view>
+
+</view>
+
+    <view class = "sign  option" bindtap = "user_option">用户反馈</view>
+   
+  </view>
+</view>

@@ -1,0 +1,27 @@
+/* pages/home_page/home_page.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160rpx;
+}
+.container image{
+  
+  height: 280rpx;
+  width: 280rpx;
+}
+
+.top,.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:40rpx;
+  color: #555555;
+}
+.top{
+  margin-bottom: 130rpx;
+}
+
+.top_text,.bottom_text{
+  margin-top:41rpx;
+}

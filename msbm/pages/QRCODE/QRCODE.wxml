@@ -1,0 +1,5 @@
+<!--pages/二维码/二维码.wxml-->
+<view class = "container">
+<image class="img" src="{{img}}" mode = "aspectFit" style='margin-left:57rpx;'></image>
+  <button bindtap = "saveImg" >保存到相册</button>
+</view>
