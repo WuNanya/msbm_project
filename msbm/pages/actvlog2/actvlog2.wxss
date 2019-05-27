@@ -54,10 +54,11 @@
   width: 191rpx;
   display: flex;
   flex-direction: row;
-  margin-left: 168rpx;
+  margin-left: 26rpx;
 }
 
 .name{
+  width: 547rpx;
   font-size: 38rpx;
 }
 
@@ -84,4 +85,8 @@ width: 200rpx;
   height: 46rpx;
   width: 46rpx;
 }
-
+.name,.num{
+    overflow:hidden;    
+    text-overflow:ellipsis;   
+    white-space:nowrap;   
+}

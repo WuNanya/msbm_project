@@ -39,7 +39,7 @@
   justify-content: space-between;
   font-size: 25rpx;
   padding-left:  30rpx;
-  padding-right: 80rpx;
+  padding-right: 20rpx;
   margin-bottom: 20rpx;
 
 }
@@ -54,10 +54,11 @@
   width: 191rpx;
   display: flex;
   flex-direction: row;
-  margin-left: 168rpx;
+  margin-left: 26rpx;
 }
 
 .name{
+  width: 547rpx;
   font-size: 40rpx;
 }
 
@@ -70,10 +71,15 @@
 }
 
 .black_head{
-
+margin-top: 4rpx;
   display: flex;
   height: 36rpx;
   width: 36rpx;
 
 }
 
+.name,.people,.time{
+    overflow:hidden;   
+    text-overflow:ellipsis;    
+    white-space:nowrap;    
+}
