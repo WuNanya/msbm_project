@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: row;
   width: 180rpx;
-  margin-left: 220rpx;
+  margin-left: 0rpx;
   font-size: 30rpx;
 }
 .userInfo{
@@ -51,6 +51,7 @@
   z-index: 100;
 }
 .userName{
+  width: 324rpx;
   z-index: 100;
 }
 .sign{
@@ -121,3 +122,8 @@
   height: 56rpx;
 }
 
+.userName{
+    overflow:hidden;   
+    text-overflow:ellipsis;    
+    white-space:nowrap;    
+}
