@@ -4,8 +4,8 @@ Page({
   data: {
     act_mess: [    //报名表项目
     ],
-    input:[],             //用户输入信息
-    userinfo:[],
+    input: [],             //用户输入信息
+    userinfo: [],
   },
   onLoad: function (options) {
     var that = this;
@@ -19,13 +19,13 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
-        if(res.statusCode == 200){
+        if (res.statusCode == 200) {
           that.setData({
-            act_mess : res.data,
+            act_mess: res.data,
           })
           console.log("成功获取")
-        } 
-        else{
+        }
+        else {
           console.log(res.statusCode)
         }
       },
@@ -33,7 +33,7 @@ Page({
         console.log(res)
       }
     })
-   
+
   },
 
   ok: function (e) {
@@ -43,16 +43,16 @@ Page({
     wx.request({
       url: 'https://www.ifeels.cn/msbmsubmit-form/',                //后台接口，填写报名表，存入数据库    报名 接口6
       data: {
-        openid:app.globalData.openid,
-        activity_id:app.globalData.activity_id,
-        user_dict:JSON.stringify(val),            //参数
+        openid: app.globalData.openid,
+        activity_id: app.globalData.activity_id,
+        user_dict: JSON.stringify(val),            //参数
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded'  //默认值
       },
       method: "post",
       success: function (res) {
-        if(res.statusCode == 200){
+        if (res.statusCode == 200) {
           wx.showToast({
             title: '报名成功',
             icon: 'success',

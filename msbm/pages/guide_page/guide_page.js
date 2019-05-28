@@ -22,10 +22,10 @@ Page({
         if (res.data == "") {
           app.login();
           setTimeout(function () {
-            wx.redirectTo({
+            wx.switchTab({
               url: '../index2/index2'
             })
-          }, 1500)
+          }, 2000)
         } else {
           var app = getApp();
           app.globalData.openid = res.data
@@ -38,10 +38,10 @@ Page({
       fail: function () {
         app.login();
         setTimeout(function () {
-          wx.redirectTo({
+          wx.switchTab({
             url: '../index2/index2'
           })
-        }, 1500)
+        }, 2000)
       }
     })
     

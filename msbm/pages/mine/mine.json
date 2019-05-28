@@ -1,1 +1,7 @@
-{}
+{
+    "usingComponents": {},
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "马桑报名",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4481dd"
+}

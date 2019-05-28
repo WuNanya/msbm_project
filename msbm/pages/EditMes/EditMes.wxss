@@ -1,122 +1,106 @@
-page {
-  background-color: #eee;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 750rpx;
 }
-.cover-thumb{
-  overflow: hidden;
-  width: 156rpx;
-	height: 156rpx;
+
+.head_img {
+  top: 53rpx;
+  left: 278rpx;
+  position: absolute;
+  height: 193rpx;
+  width: 193rpx;
+  border-radius: 100rpx;
+}
+.head{
   border-radius: 50%;
 }
-.centerPage-wrap .cover-thumb {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 149rpx;
+  background-color: white;
+  height: 730rpx;
 }
 
-.centerPage-wrap .centerPage-user-info {
-  padding-left: 3%;
-  padding-right: 3%;
-  border-top: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
-  margin-top: 15px;
-  list-style: none;
-  line-height: 40px;
-  text-indent: 10px;
-  background-color: #fff;
+.modify {
+  color: #555555;
+  font-size: 36rpx;
+  margin-top: 110rpx;
 }
 
-.centerPage-wrap.cur-bind-tel .centerPage-user-info {
-  display: none;
+.detailed {
+  font-size: 36rpx;
+  color: #555555;
+  width: 670rpx;
 }
 
-.centerPage-wrap .centerPage-user-info view {
-  position: relative;
-  border-bottom: 1px solid #ededed;
+.message_name {
+  padding-top: 28rpx;
+  height: 98rpx;
+  display: flex;
+  flex-direction: row;
+  border-color: #c4c4c4;
+  border-width: 0 0 1rpx 0;
+  border-style: solid;
+
 }
 
-.centerPage-wrap .centerPage-user-info view:last-child {
-  border-bottom: none;
+input {
+  color: #555555;
+  text-align: right;
+  width: 500rpx;
 }
 
-.centerPage-info-item {
-  height: 117rpx;
-  line-height: 117rpx;
+.name {
+  width: 160rpx;
+  font-size: 36rpx;
 }
 
-.centerPage-wrap .nickname, .centerPage-wrap .userCenter-tel,
-.centerPage-wrap .centerPage-sex {
-  float: right;
-  border: none;
-  width: 65%;
-  line-height: 117rpx;
-  height: 117rpx;
-  margin-right: 25px;
-  color: #888;
-  font-size: 14px;
+radio {
+  width: 38rpx;
 }
 
-.centerPage-wrap .centerPage-sex {
-  height: 50px;
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
 }
 
-.centerPage-wrap .icon-rightarrow {
-  position: absolute;
-  right: 4px;
-  top: 50%;
-  margin-top: -10px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 14px;
-  color: #999;
+.radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 26rpx; /* 对勾大小 26rpx */
+  color: #fff; /* 对勾颜色 */
+  background: #2facff;
+  border-color: #2facff;
 }
 
-.centerPage-wrap .shadow-content {
-  width: 80%;
-  left: 8%;
-  top: 50%;
-  margin-top: -150px;
-  padding: 3% 2%;
-  background-color: #fff;
-  font-size: 14px;
+.position {
+
+  margin-left: 300rpx;
 }
 
-.centerPage-wrap .shadow-content view {
-  line-height: 40px;
-  text-indent: 10px;
-}
-
-.centerPage-wrap .shadow-content .title {
-  font-size: 18px;
-  color: #41b80e;
-  border-bottom: 2px solid #bcbcbc;
-}
-
-.centerPage-wrap .centerPage-sex-p:first-child {
-  border-bottom: 1px solid #bcbcbc;
-}
-
-.centerPage-wrap .centerPage-sex-p label {
-  display: none;
-  float: right;
-  color: #41b80e;
-  margin-right: 10px;
-}
-
-.centerPage-wrap .selected label {
-  display: block;
+.radio {
+  margin-right: 80rpx;
 }
 
 .centerPage-save-btn {
   margin: 70rpx 50rpx;
   height: 90rpx;
   line-height: 90rpx;
-  background-color: #1296db;
+  background-color: #4481dd;
   color: #fff;
-  border-radius: 2px;
   text-align: center;
+  width: 85%;
+  border-radius: 15rpx;
 }

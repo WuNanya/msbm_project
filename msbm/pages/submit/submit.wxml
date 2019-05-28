@@ -1,19 +1,15 @@
-<view class="page centerPage-wrap" data-router="userCenterPage" id="userCenterPage" role="" aria-label="">
-  <view class="centerPage-user-info" role="" aria-label="">
-    <view class="js-change-cover" role="" aria-label="">
-      <open-data type="userAvatarUrl" class="cover-thumb"></open-data>
-      <label class="ico-moon icon-rightarrow"></label>
-    </view>
-  </view>
-  <form bindsubmit='ok'>
-    <view class="centerPage-user-info" role="" aria-label="">
-      <view class="centerPage-info-item" role="" aria-label="" wx:for="{{act_mess}}" data-value="{{act.mess}}" >
-        <label>{{item}}</label>
-        <label class="ico-moon icon-rightarrow"></label>
-        <input  class="nickname" placeholder="请输入您的{{item}}" value="" data-value="{{index}}" name="{{index}}" >
-        </input>
+<view class='ServiceCenter'>
+<form bindsubmit='ok'> 
+  <view class='message'>
+    <open-data class=" head" type="userAvatarUrl"></open-data>
+    <form bindsubmit='ok'>
+      <view class='detail' wx:for="{{act_mess}}" data-value="{{act.mess}}">
+        <view class='name'>{{item}}</view>
+        <input placeholder-class = 'font-size:8px' placeholder-style='text-align:center;' class="nickname" placeholder="您的{{item}}" value="" data-value="{{index}}" name="{{index}}" class='input'></input>
       </view>
-    </view>
-    <button form-type='submit' class="centerPage-save-btn" role="" aria-label="">报名活动</button>
+      <button form-type='submit' class="centerPage-save-btn" role="" aria-label="">报名活动</button>
+    </form>
+
+  </view>
   </form>
 </view>

@@ -5,15 +5,15 @@ Page({
     name: '',
     sex: 0,
     age:'',
-    college:'',
-    major:'',
-    id:'',
     tel:'',
-    array: ['女', '男'],
     index: 0,
+    items: [
+      { name: '男', checked: true },
+      { name: '女', checked: false },
+    ],
   },
 
-  bindPickerChange: function (e) {
+  changeSex: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       sex: e.detail.value
@@ -35,10 +35,18 @@ Page({
           console.log(res.data)
           if(res.data.sex == 0){
             that.setData({
-              sex:'女'
+              items: [
+                { name: '男', checked: false },
+                { name: '女', checked: true },
+              ],
+              sex : '女'
             })
           }else{
             that.setData({
+              items: [
+                { name: '男', checked: true },
+                { name: '女', checked: false },
+              ],
               sex:'男'
             })
           }
@@ -72,51 +80,21 @@ Page({
     })
     console.log(this.data.age)
   },
-  xueyuanChange:function(e){
-    this.setData({
-      college:e.detail.value
-    })
-    console.log(this.data.college)
-  },
-  majorChange:function(e){
-    this.setData({
-      major: e.detail.value
-    })
-    console.log(this.data.major)
-  },
-  idChange:function(e){
-    this.setData({
-      id: e.detail.value
-    })
-    console.log(this.data.id)
-  },
   telChange:function(e){
     this.setData({
       tel : e.detail.value
     })
     console.log(this.data.tel)
   },
-  // choosePhoto:function(e){        //选择头像
-  //   var that = this;
-  //   wx.chooseImage({
-  //     count:1,
-  //     sizeType: ['original', 'compressed'],  //可选择原图或压缩后的图片
-  //     sourceType: ['album', 'camera'], //可选择性开放访问相册、相机
-  //     success(res) {
-  //       console.log("选择图片")
-  //       // tempFilePath可以作为img标签的src属性显示图片
-  //      that.setData({
-  //        imgPath:res.tempFilePaths
-  //      })
-  //     },
-  //     fail(res){
-  //       console.log("用户取消操作")
-  //     }
-  //   })
-  // },
   saveUserInfo:function(e){
     var that = this;
     console.log(this.data.tel)
+    var xingbie;
+    if(that.data.sex == '男'){
+      xingbie = 1
+    }else{
+      xingbie = 0
+    }
     if (!(/^(13[0-9]|14[0-9]|15[0-9]|166|17[0-9]|18[0-9]|19[8|9])\d{8}$/.test(this.data.tel))) {
       wx.showToast({
 
@@ -141,7 +119,7 @@ Page({
           data:{ 
             user_id : app.globalData.openid, 
             user_name: that.data.name,
-            sex: that.data.sex,
+            sex: xingbie,
             age: that.data.age,
             telephone: that.data.tel,         //手机号
           },     

@@ -72,22 +72,7 @@ App({
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
   onLaunch: function() {
-    var that = this;
-    wx.getStorage({ //首次加载小程序，判断是否授权过或权限是否过期，从本地缓存获取已经加载的openid
-      key: 'userId',
-      success: function(res) {
-        if (res.data == "") {
-          that.login();
-        } else {
-          var app = getApp();
-          app.globalData.openid = res.data
-          console.log("全局openid" + app.globalData.openid)
-        }
-      },
-      fail: function() {
-        that.login();
-      }
-    })
+  
   },
 
   /**

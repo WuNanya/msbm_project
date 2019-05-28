@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/index2/index2",
     "pages/guide_page/guide_page",
-    "pages/QRCODE/QRCODE",
     "pages/submit/submit",
+    "pages/index2/index2",
+    "pages/QRCODE/QRCODE",
     "pages/Activity_list/Activity_list",
     "pages/activity_details/activity_details",
     "pages/actvlog2/actvlog2",
@@ -15,10 +15,9 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "backgroundColor": "#010101",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "码上报名",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "马桑报名",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4481dd"
   },
   "networkTimeout": {
     "request": 10000,

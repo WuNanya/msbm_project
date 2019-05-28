@@ -6,8 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    items: [
+      { name: '咨询', checked: true },
+      { name: '建议', checked: false },
+      { name: '其他', checked: false }
+    ],
+
     focus: false,
-    option:''
+    option: ''
   },
   change_value:function(e){
     this.setData({
