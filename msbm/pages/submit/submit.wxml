@@ -5,7 +5,7 @@
     <form bindsubmit='ok'>
       <view class='detail' wx:for="{{act_mess}}" data-value="{{act.mess}}">
         <view class='name'>{{item}}</view>
-        <input placeholder-class = 'font-size:8px' placeholder-style='text-align:center;' class="nickname" placeholder="您的{{item}}" value="" data-value="{{index}}" name="{{index}}" class='input'></input>
+        <input placeholder-class = 'font-size:8px' placeholder-style='text-align:left;' class="nickname" placeholder="您的{{item}}" value="" data-value="{{index}}" name="{{index}}" class='input'></input>
       </view>
       <button form-type='submit' class="centerPage-save-btn" role="" aria-label="">报名活动</button>
     </form>
