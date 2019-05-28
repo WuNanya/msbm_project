@@ -19,6 +19,7 @@
 }
 
 .message {
+  color: #333333;
   
   font-family: "微软雅黑", "黑体";
   height: 80rpx;
@@ -57,7 +58,7 @@
   font-size: 30rpx;
   font-family: "微软雅黑", "黑体";
   top: 103rpx;
-  background: #1296db;
+  background: #4481dd;
 }
 
 .add {
@@ -79,6 +80,8 @@ height: 58rpx;
   width: 200rpx;
   background-color: white;
   height: 70rpx;
+  font-size: 28rpx;
+  color: #333333;
   
 }
 

@@ -142,7 +142,7 @@
 
 .cancel{
   text-align: center;
-  background-color:#1296db;
+  background-color:#4481dd;
   width: 50%;
   padding: 30rpx;
 

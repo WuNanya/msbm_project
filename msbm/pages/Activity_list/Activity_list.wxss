@@ -48,7 +48,7 @@ margin-left: 50rpx;
 .btn1{
     margin-top: 30rpx;
     width: 100%;
-    background:#1296db;
+    background:#4481dd;
     color: white;
     border-radius: 0;
 }
